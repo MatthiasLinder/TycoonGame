@@ -1,0 +1,10 @@
+c:\users\matth\source\repos\TycoonGame\TycoonGame\obj\Debug\TycoonGame.csprojResolveAssemblyReference.cache
+c:\users\matth\source\repos\TycoonGame\TycoonGame\obj\Debug\TycoonGame.Form1.resources
+c:\users\matth\source\repos\TycoonGame\TycoonGame\obj\Debug\TycoonGame.Properties.Resources.resources
+c:\users\matth\source\repos\TycoonGame\TycoonGame\obj\Debug\TycoonGame.csproj.GenerateResource.Cache
+c:\users\matth\source\repos\TycoonGame\TycoonGame\obj\Debug\TycoonGame.csproj.CoreCompileInputs.cache
+c:\users\matth\source\repos\TycoonGame\TycoonGame\bin\Debug\TycoonGame.exe.config
+c:\users\matth\source\repos\TycoonGame\TycoonGame\bin\Debug\TycoonGame.exe
+c:\users\matth\source\repos\TycoonGame\TycoonGame\bin\Debug\TycoonGame.pdb
+c:\users\matth\source\repos\TycoonGame\TycoonGame\obj\Debug\TycoonGame.exe
+c:\users\matth\source\repos\TycoonGame\TycoonGame\obj\Debug\TycoonGame.pdb
