@@ -16,6 +16,7 @@ namespace TycoonGame
         private decimal Money = 20;
         private decimal AutoIncome = 0;
         private decimal CompanyShares = 100;
+
         //PRICE CHANGE REQUIREMENTS
         private int FoodBuisnessStatusInt = 15;
         private int RealEstateStatusInt = 40;
@@ -128,11 +129,7 @@ namespace TycoonGame
             Money = Math.Round(Money);
             string DisplayMoney = Money.ToString();
             CurrentMoneyNumber.Text = DisplayMoney + "$";
-            if(Fame > 20)
-            {
-                int RemoveFame = Fame - 20;
-                Fame = Fame - RemoveFame;
-            }
+            
             if(Fame >= 2)
             {
                 FirstHidden.Visible = false;
@@ -172,6 +169,12 @@ namespace TycoonGame
                 OilPricesLabel.Visible = true;
                 OilSectorLabel.Visible = true;
                 OilSectorStatus.Visible = true;
+            }
+            if (Fame > 10)
+            {
+                Fame = Fame - 1;
+                string FameUpdate = Fame.ToString();
+                CurrentFame.Text = FameUpdate;
             }
         }
 
@@ -736,6 +739,11 @@ namespace TycoonGame
                     OilSectorStatus.Text = OilSectorBuisDisplay;
                 }
             }
+        }
+
+        private void CurrentFame_Click(object sender, EventArgs e)
+        {
+
         }
         //----------------------------------------------------------------------------------------//
         //----------------------------------------------------------------------------------------//

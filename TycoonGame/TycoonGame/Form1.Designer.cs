@@ -44,12 +44,14 @@
             this.EnterCompanyName = new System.Windows.Forms.TextBox();
             this.CompanySharesLabel = new System.Windows.Forms.Label();
             this.PlayerChosenName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CurrentFame = new System.Windows.Forms.Label();
             this.SharesQ = new System.Windows.Forms.Label();
             this.CurrentMoneyNumber = new System.Windows.Forms.Label();
             this.FameLabel = new System.Windows.Forms.Label();
             this.Info2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.BackGround2 = new System.Windows.Forms.PictureBox();
             this.FoodPriceLabel = new System.Windows.Forms.Label();
             this.RealEstatePricesLabel = new System.Windows.Forms.Label();
             this.FashionPricesLabel = new System.Windows.Forms.Label();
@@ -100,13 +102,11 @@
             this.Info3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.BuyingQ = new System.Windows.Forms.Label();
-            this.BackGround2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BackGround1 = new System.Windows.Forms.PictureBox();
             this.CurrentEventDisplayFrame.SuspendLayout();
             this.SecondInfoBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BackGround2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackGround2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackGround1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -283,6 +283,16 @@
             this.PlayerChosenName.TabIndex = 13;
             this.PlayerChosenName.Text = "?";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(883, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(318, 145);
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
+            // 
             // CurrentFame
             // 
             this.CurrentFame.AutoSize = true;
@@ -295,6 +305,7 @@
             this.CurrentFame.Size = new System.Drawing.Size(34, 35);
             this.CurrentFame.TabIndex = 43;
             this.CurrentFame.Text = "0";
+            this.CurrentFame.Click += new System.EventHandler(this.CurrentFame_Click);
             // 
             // SharesQ
             // 
@@ -353,6 +364,15 @@
             this.label9.TabIndex = 51;
             this.label9.Text = "Shares\r\n";
             // 
+            // BackGround2
+            // 
+            this.BackGround2.BackgroundImage = global::TycoonGame.Properties.Resources.Cool_Red_Wallpapers_058_jpg;
+            this.BackGround2.Location = new System.Drawing.Point(0, 17);
+            this.BackGround2.Name = "BackGround2";
+            this.BackGround2.Size = new System.Drawing.Size(1204, 169);
+            this.BackGround2.TabIndex = 56;
+            this.BackGround2.TabStop = false;
+            // 
             // FoodPriceLabel
             // 
             this.FoodPriceLabel.AutoSize = true;
@@ -365,7 +385,6 @@
             this.FoodPriceLabel.Size = new System.Drawing.Size(34, 35);
             this.FoodPriceLabel.TabIndex = 13;
             this.FoodPriceLabel.Text = "0";
-            
             // 
             // RealEstatePricesLabel
             // 
@@ -380,7 +399,6 @@
             this.RealEstatePricesLabel.TabIndex = 14;
             this.RealEstatePricesLabel.Text = "0";
             this.RealEstatePricesLabel.Visible = false;
-            
             // 
             // FashionPricesLabel
             // 
@@ -855,7 +873,6 @@
             this.OilPricesLabel.TabIndex = 45;
             this.OilPricesLabel.Text = "0";
             this.OilPricesLabel.Visible = false;
-
             // 
             // VehclePricesLabel
             // 
@@ -870,7 +887,6 @@
             this.VehclePricesLabel.TabIndex = 44;
             this.VehclePricesLabel.Text = "0";
             this.VehclePricesLabel.Visible = false;
-            
             // 
             // ElectronicsPricesLabel
             // 
@@ -885,7 +901,6 @@
             this.ElectronicsPricesLabel.TabIndex = 43;
             this.ElectronicsPricesLabel.Text = "0";
             this.ElectronicsPricesLabel.Visible = false;
-         
             // 
             // ThirdHidden
             // 
@@ -974,7 +989,6 @@
             this.label10.Size = new System.Drawing.Size(39, 13);
             this.label10.TabIndex = 51;
             this.label10.Text = "Buying";
-            
             // 
             // BuyingQ
             // 
@@ -985,25 +999,6 @@
             this.BuyingQ.Name = "BuyingQ";
             this.BuyingQ.Size = new System.Drawing.Size(0, 13);
             this.BuyingQ.TabIndex = 57;
-            // 
-            // BackGround2
-            // 
-            this.BackGround2.BackgroundImage = global::TycoonGame.Properties.Resources.Cool_Red_Wallpapers_058_jpg;
-            this.BackGround2.Location = new System.Drawing.Point(0, 17);
-            this.BackGround2.Name = "BackGround2";
-            this.BackGround2.Size = new System.Drawing.Size(1204, 169);
-            this.BackGround2.TabIndex = 56;
-            this.BackGround2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(883, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(318, 145);
-            this.pictureBox1.TabIndex = 42;
-            this.pictureBox1.TabStop = false;
             // 
             // BackGround1
             // 
@@ -1078,8 +1073,8 @@
             this.CurrentEventDisplayFrame.ResumeLayout(false);
             this.SecondInfoBox.ResumeLayout(false);
             this.SecondInfoBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BackGround2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BackGround2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BackGround1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
